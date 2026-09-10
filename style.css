@@ -1438,3 +1438,65 @@ h1, h2, h3, h4 { color: var(--heading); }
   background: var(--teal);
   color: #0a0f1c;
 }
+
+/* ============================================================
+   MOBILE PERFORMANCE + POLISH
+   ============================================================ */
+
+/* iOS Safari: fixed background causes scroll lag — use scroll instead */
+@media (max-width: 720px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .aurora {
+    position: absolute;   /* stop it repainting on scroll on mobile */
+  }
+
+  /* Reduce blur blobs on mobile for performance */
+  .aurora-blob {
+    filter: blur(50px);
+  }
+
+  /* Tighter spacing for small screens */
+  .section { padding: 64px 0; }
+  .hero { padding: 56px 0 48px; }
+  .container { padding: 0 18px; }
+
+  /* Make cards a bit less padded on small phones */
+  .finding-card,
+  .recommend-card {
+    padding: 22px;
+  }
+
+  /* Better tap targets */
+  .btn {
+    padding: 14px 22px;
+    font-size: 0.95rem;
+  }
+
+  /* Stack hero CTA buttons vertically on narrow phones */
+  .hero-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-cta-row .btn {
+    justify-content: center;
+  }
+
+  /* Slightly smaller hero heading for very narrow screens */
+  .hero-title {
+    font-size: clamp(1.75rem, 7vw, 2.4rem);
+  }
+}
+
+/* Extra-small phones (below 400px) */
+@media (max-width: 400px) {
+  .stat-card {
+    min-width: 100%;
+    padding: 14px 20px;
+  }
+  .hero-stats {
+    flex-direction: column;
+  }
+}
