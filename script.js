@@ -1,4 +1,3 @@
-cat > script.js << 'EOF'
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', e => {
@@ -11,4 +10,3 @@ document.querySelectorAll('nav a').forEach(link => {
 });
 
 console.log('IT Infrastructure Project site loaded.');
-EOF
