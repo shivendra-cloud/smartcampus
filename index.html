@@ -1,61 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Impact of IT Infrastructure on Academic Institution Administration</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Impact of IT Infrastructure on Academic Institution Administration</title>
+<meta name="description" content="A field research project examining how IT infrastructure shapes efficiency, records management, communication, and decision-making in academic institution administration." />
+<meta name="author" content="SmartCampus Research Team" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Impact of IT Infrastructure on Academic Institution Administration" />
+<meta property="og:description" content="Survey-based research on how IT infrastructure affects academic administration — efficiency, records, communication, decision-making, and future investment." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SmartCampus Research" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Impact of IT Infrastructure on Academic Institution Administration</h1>
-    <p>A field project survey on how IT systems shape administrative efficiency, communication, and decision-making in academic institutions.</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#methodology">Methodology</a>
-    <a href="#findings">Findings</a>
-    <a href="#recommendations">Recommendations</a>
-    <a href="#team">Team</a>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="aurora" aria-hidden="true">
+  <span class="aurora-blob aurora-blob-1"></span>
+  <span class="aurora-blob aurora-blob-2"></span>
+  <span class="aurora-blob aurora-blob-3"></span>
+  <span class="aurora-blob aurora-blob-4"></span>
+  <span class="aurora-grid"></span>
+</div>
+
+<header class="site-header" id="site-header">
+  <nav class="navbar" aria-label="Primary">
+    <a href="#hero" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M3 8.5 12 4l9 4.5-9 4.5-9-4.5Z" />
+          <path d="M6.5 10.6V16c0 1 2.5 2.3 5.5 2.3s5.5-1.3 5.5-2.3v-5.4" />
+          <path d="M20 9v6" />
+        </svg>
+      </span>
+      <span class="brand-text">SmartCampus<span class="brand-sub">Research</span></span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <span class="nav-indicator" id="nav-indicator" aria-hidden="true"></span>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#methodology" class="nav-link">Methodology</a></li>
+      <li><a href="#findings" class="nav-link">Findings</a></li>
+      <li><a href="#analysis" class="nav-link">Analysis</a></li>
+      <li><a href="#recommendations" class="nav-link">Recommendations</a></li>
+      <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+      <li><a href="#team" class="nav-link">Team</a></li>
+    </ul>
   </nav>
+  <div class="progress-bar" id="progress-bar"></div>
+</header>
 
-  <main>
-    <section id="about">
-      <h2>About the Project</h2>
-      <p>This project examines the perceived impact of IT infrastructure on academic administration through a 20-question survey distributed to administrators, faculty, and staff.</p>
-    </section>
+<main id="main-content">
 
-    <section id="methodology">
-      <h2>Methodology</h2>
-      <p>An online questionnaire with Likert-scale responses was circulated. Over 50 responses were collected and analysed using Google Sheets.</p>
-    </section>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-orbs" id="hero-orbs" aria-hidden="true">
+      <span class="hero-orb hero-orb-1"></span>
+      <span class="hero-orb hero-orb-2"></span>
+      <span class="hero-orb hero-orb-3"></span>
+      <span class="hero-orb hero-orb-4"></span>
+    </div>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow hero-reveal" style="--r:1">A Student Field Research Project</p>
+      <h1 class="hero-title hero-reveal" style="--r:2">The Impact of IT Infrastructure on Academic Institution Administration</h1>
+      <p class="hero-subtitle hero-reveal" style="--r:3">
+        How digital systems are reshaping efficiency, records management, communication,
+        and decision-making across campus administration — examined through the experiences
+        of the people who run our institutions day to day.
+      </p>
 
-    <section id="findings">
-      <h2>Findings</h2>
-      <p>Charts and summaries will be embedded here.</p>
-    </section>
+      <div class="hero-stats hero-reveal" style="--r:4" role="list">
+        <div class="stat-card" role="listitem">
+          <span class="stat-number" data-target="50" data-suffix="+">0</span>
+          <span class="stat-label">Survey Responses</span>
+        </div>
+        <div class="stat-card" role="listitem">
+          <span class="stat-number" data-target="20" data-suffix="">0</span>
+          <span class="stat-label">Survey Questions</span>
+        </div>
+        <div class="stat-card" role="listitem">
+          <span class="stat-number" data-target="6" data-suffix="">0</span>
+          <span class="stat-label">Impact Areas</span>
+        </div>
+      </div>
 
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <ul>
-        <li>Upgrade existing IT systems</li>
-        <li>Provide regular staff training</li>
-        <li>Strengthen data security</li>
-        <li>Adopt cloud-based solutions</li>
-      </ul>
-    </section>
+      <div class="hero-cta-row hero-reveal" style="--r:5">
+        <a href="#findings" class="btn btn-primary hero-cta">
+          View Findings
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+        <a href="https://forms.gle/n9czYgDtMUUF9SVS9" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+          Take the Survey
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section id="team">
-      <h2>Team</h2>
-      <p>Add your group members here.</p>
-    </section>
-  </main>
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-eyebrow">About the Project</p>
+      <h2 class="section-title fade-in">Why we studied IT infrastructure in campus administration</h2>
 
-  <footer>
-    <p>&copy; 2026 Field Project. All rights reserved.</p>
-  </footer>
+      <div class="about-grid">
+        <div class="about-copy fade-in">
+          <p>
+            Academic institutions increasingly rely on digital systems — student information
+            systems, learning management platforms, cloud storage, and internal communication
+            tools — to run daily operations. Yet the practical effects of these systems on the
+            administrators, faculty, and staff who use them are rarely documented from their
+            own perspective.
+          </p>
+          <p>
+            This project set out to close that gap. Our objective was to understand, in the
+            words and experiences of academic staff, how IT infrastructure changes the way
+            institutions are administered: where it saves time, where it introduces friction,
+            and where further investment would make the biggest difference.
+          </p>
+          <p>
+            The scope of the study covers administrative and academic staff across a range of
+            institutional roles, focusing on six themes that together describe the administrative
+            lifecycle — from daily efficiency to long-term investment decisions.
+          </p>
+        </div>
 
-  <script src="script.js"></script>
+        <div class="about-list fade-in">
+          <h3>Research Objectives</h3>
+          <ul class="check-list">
+            <li>Measure perceived time savings from IT systems in routine administrative work</li>
+            <li>Assess the reliability and accuracy of digital student and academic records</li>
+            <li>Evaluate how technology affects internal communication and information access</li>
+            <li>Understand the role of dashboards and digital tools in institutional decision-making</li>
+            <li>Identify recurring infrastructure gaps and their operational consequences</li>
+            <li>Gauge overall sentiment toward continued investment in IT infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ METHODOLOGY ============ -->
+  <section class="section section-muted" id="methodology">
+    <div class="container">
+      <p class="section-eyebrow">Methodology</p>
+      <h2 class="section-title fade-in">How the research was conducted</h2>
+      <p class="section-lede fade-in">
+        The study used a structured, quantitative survey approach designed to capture
+        perceptions across a broad cross-section of academic institution staff.
+      </p>
+
+      <div class="timeline" id="timeline">
+        <span class="timeline-track" aria-hidden="true"></span>
+        <span class="timeline-progress" id="timeline-progress" aria-hidden="true"></span>
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Survey Design</h3>
+            <p>
+              A 20-item questionnaire was developed using a 5-point Likert scale
+              (Strongly Disagree to Strongly Agree), grouped into six thematic sections
+              covering efficiency, records, communication, decision-making, challenges,
+              and future outlook.
+            </p>
+            <a href="https://forms.gle/n9czYgDtMUUF9SVS9" target="_blank" rel="noopener noreferrer" class="timeline-link">
+              View the live survey form
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Target Respondents</h3>
+            <p>
+              Respondents included academic administrators, department coordinators,
+              faculty members, and support staff — all with direct, regular exposure
+              to institutional IT systems in their day-to-day roles.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Sample Size</h3>
+            <p>
+              The survey collected responses from <strong>50+ participants</strong> across
+              multiple departments and institutions, providing a diverse cross-section
+              of administrative experience levels and roles.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Analysis Method</h3>
+            <p>
+              Responses were aggregated by theme and visualized as distribution charts.
+              Mean scores and response spread were used to identify areas of strong
+              consensus versus areas of divided opinion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDINGS ============ -->
+  <section class="section" id="findings">
+    <div class="container">
+      <p class="section-eyebrow">Findings</p>
+      <h2 class="section-title fade-in">Results across six impact areas</h2>
+      <p class="section-lede fade-in">
+        Each theme below summarizes responses to related survey questions. Charts are
+        embedded live from the survey response spreadsheet.
+      </p>
+
+      <div class="findings-grid">
+
+        <article class="finding-card fade-in">
+          <span class="finding-index">01</span>
+          <h3>Administrative Efficiency &amp; Time Savings</h3>
+          <div class="chart-embed" id="chart-efficiency-wrap">
+            <iframe id="chart-efficiency" title="Chart: Administrative Efficiency and Time Savings" loading="lazy"
+              data-src="" width="100%" height="280" frameborder="0"></iframe>
+            <div class="chart-placeholder">
+              <svg viewBox="0 0 64 48" width="52" height="40" aria-hidden="true">
+                <rect x="4" y="26" width="10" height="18" rx="2"></rect>
+                <rect x="20" y="14" width="10" height="30" rx="2"></rect>
+                <rect x="36" y="20" width="10" height="24" rx="2"></rect>
+                <rect x="52" y="6" width="10" height="38" rx="2"></rect>
+              </svg>
+              <p>Live chart coming soon</p>
+              <span class="chart-placeholder-hint">Embed code will render here once added</span>
+            </div>
+          </div>
+          <p>
+            A majority of respondents reported noticeable time savings on repetitive
+            administrative tasks after adopting digital systems. Efficiency gains were
+            most pronounced in scheduling, reporting, and routine data entry.
+          </p>
+        </article>
+
+        <article class="finding-card fade-in">
+          <span class="finding-index">02</span>
+          <h3>Student &amp; Academic Records Management</h3>
+          <div class="chart-embed" id="chart-records-wrap">
+            <iframe id="chart-records" title="Chart: Student and Academic Records Management" loading="lazy"
+              data-src="" width="100%" height="280" frameborder="0"></iframe>
+            <div class="chart-placeholder">
+              <svg viewBox="0 0 64 48" width="52" height="40" aria-hidden="true">
+                <rect x="4" y="26" width="10" height="18" rx="2"></rect>
+                <rect x="20" y="14" width="10" height="30" rx="2"></rect>
+                <rect x="36" y="20" width="10" height="24" rx="2"></rect>
+                <rect x="52" y="6" width="10" height="38" rx="2"></rect>
+              </svg>
+              <p>Live chart coming soon</p>
+              <span class="chart-placeholder-hint">Embed code will render here once added</span>
+            </div>
+          </div>
+          <p>
+            Respondents generally agreed that digital records systems improved accuracy
+            and reduced duplication. Some concerns remained around data migration and
+            legacy record integrity.
+          </p>
+        </article>
+
+        <article class="finding-card fade-in">
+          <span class="finding-index">03</span>
+          <h3>Communication &amp; Information Access</h3>
+          <div class="chart-embed" id="chart-communication-wrap">
+            <iframe id="chart-communication" title="Chart: Communication and Information Access" loading="lazy"
+              data-src="" width="100%" height="280" frameborder="0"></iframe>
+            <div class="chart-placeholder">
+              <svg viewBox="0 0 64 48" width="52" height="40" aria-hidden="true">
+                <rect x="4" y="26" width="10" height="18" rx="2"></rect>
+                <rect x="20" y="14" width="10" height="30" rx="2"></rect>
+                <rect x="36" y="20" width="10" height="24" rx="2"></rect>
+                <rect x="52" y="6" width="10" height="38" rx="2"></rect>
+              </svg>
+              <p>Live chart coming soon</p>
+              <span class="chart-placeholder-hint">Embed code will render here once added</span>
+            </div>
+          </div>
+          <p>
+            IT infrastructure was seen as significantly improving internal communication
+            speed and access to shared information, particularly across departments that
+            previously relied on paper-based coordination.
+          </p>
+        </article>
+
+        <article class="finding-card fade-in">
+          <span class="finding-index">04</span>
+          <h3>Decision-Making, Transparency &amp; Monitoring</h3>
+          <div class="chart-embed" id="chart-decision-wrap">
+            <iframe id="chart-decision" title="Chart: Decision-Making, Transparency and Monitoring" loading="lazy"
+              data-src="" width="100%" height="280" frameborder="0"></iframe>
+            <div class="chart-placeholder">
+              <svg viewBox="0 0 64 48" width="52" height="40" aria-hidden="true">
+                <rect x="4" y="26" width="10" height="18" rx="2"></rect>
+                <rect x="20" y="14" width="10" height="30" rx="2"></rect>
+                <rect x="36" y="20" width="10" height="24" rx="2"></rect>
+                <rect x="52" y="6" width="10" height="38" rx="2"></rect>
+              </svg>
+              <p>Live chart coming soon</p>
+              <span class="chart-placeholder-hint">Embed code will render here once added</span>
+            </div>
+          </div>
+          <p>
+            Dashboards and reporting tools were credited with improving transparency
+            and enabling more data-informed decisions, though adoption of these tools
+            varied notably by department.
+          </p>
+        </article>
+
+        <article class="finding-card fade-in">
+          <span class="finding-index">05</span>
+          <h3>Challenges &amp; Infrastructure Gaps</h3>
+          <div class="chart-embed" id="chart-challenges-wrap">
+            <iframe id="chart-challenges" title="Chart: Challenges and Infrastructure Gaps" loading="lazy"
+              data-src="" width="100%" height="280" frameborder="0"></iframe>
+            <div class="chart-placeholder">
+              <svg viewBox="0 0 64 48" width="52" height="40" aria-hidden="true">
+                <rect x="4" y="26" width="10" height="18" rx="2"></rect>
+                <rect x="20" y="14" width="10" height="30" rx="2"></rect>
+                <rect x="36" y="20" width="10" height="24" rx="2"></rect>
+                <rect x="52" y="6" width="10" height="38" rx="2"></rect>
+              </svg>
+              <p>Live chart coming soon</p>
+              <span class="chart-placeholder-hint">Embed code will render here once added</span>
+            </div>
+          </div>
+          <p>
+            Frequently cited challenges included inconsistent system reliability,
+            insufficient staff training, and integration gaps between legacy and
+            newer platforms.
+          </p>
+        </article>
+
+        <article class="finding-card fade-in">
+          <span class="finding-index">06</span>
+          <h3>Overall Impact &amp; Future Investment</h3>
+          <div class="chart-embed" id="chart-overall-wrap">
+            <iframe id="chart-overall" title="Chart: Overall Impact and Future Investment" loading="lazy"
+              data-src="" width="100%" height="280" frameborder="0"></iframe>
+            <div class="chart-placeholder">
+              <svg viewBox="0 0 64 48" width="52" height="40" aria-hidden="true">
+                <rect x="4" y="26" width="10" height="18" rx="2"></rect>
+                <rect x="20" y="14" width="10" height="30" rx="2"></rect>
+                <rect x="36" y="20" width="10" height="24" rx="2"></rect>
+                <rect x="52" y="6" width="10" height="38" rx="2"></rect>
+              </svg>
+              <p>Live chart coming soon</p>
+              <span class="chart-placeholder-hint">Embed code will render here once added</span>
+            </div>
+          </div>
+          <p>
+            Overall sentiment was strongly positive, with most respondents supporting
+            continued or increased investment in IT infrastructure over the next
+            planning cycle.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ANALYSIS ============ -->
+  <section class="section section-muted" id="analysis">
+    <div class="container">
+      <p class="section-eyebrow">Analysis &amp; Discussion</p>
+      <h2 class="section-title fade-in">What the results tell us</h2>
+
+      <div class="analysis-columns">
+        <div class="fade-in">
+          <h3>Consistent strengths</h3>
+          <p>
+            Across all six themes, the clearest pattern is that IT infrastructure delivers
+            the most value where it replaces manual, repetitive work — scheduling, records
+            entry, and routine reporting. These are areas where respondents across roles and
+            departments agreed most strongly, suggesting the benefits of digitization are
+            broadly felt rather than concentrated among a few power users.
+          </p>
+          <p>
+            Communication also emerged as a strong point, with shared platforms reducing the
+            delay between information being available and information being acted upon.
+          </p>
+        </div>
+        <div class="fade-in">
+          <h3>Where opinions diverge</h3>
+          <p>
+            Responses were more divided on decision-making tools and infrastructure
+            reliability. This divergence appears linked to uneven access: departments with
+            dedicated IT support and modern dashboards reported far more confidence in
+            data-driven decisions than those still working with fragmented or aging systems.
+          </p>
+          <p>
+            This suggests that the value of IT infrastructure is not just about whether
+            systems exist, but how consistently they are maintained, integrated, and
+            supported with adequate training.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECOMMENDATIONS ============ -->
+  <section class="section" id="recommendations">
+    <div class="container">
+      <p class="section-eyebrow">Recommendations</p>
+      <h2 class="section-title fade-in">Six actionable next steps</h2>
+
+      <div class="recommend-grid">
+        <div class="recommend-card fade-in">
+          <div class="recommend-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>Standardize routine workflows</h3>
+          <p>Expand automation of scheduling, reporting, and data entry to departments still relying on manual processes, prioritizing the highest time-cost tasks first.</p>
+        </div>
+
+        <div class="recommend-card fade-in">
+          <div class="recommend-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 4v5h5"/></svg>
+          </div>
+          <h3>Modernize legacy records systems</h3>
+          <p>Invest in phased migration plans for institutions still maintaining legacy record systems, with clear data-integrity checks at each stage.</p>
+        </div>
+
+        <div class="recommend-card fade-in">
+          <div class="recommend-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+          </div>
+          <h3>Unify communication platforms</h3>
+          <p>Consolidate messaging and information-sharing tools into a single institutional standard to reduce fragmentation across departments.</p>
+        </div>
+
+        <div class="recommend-card fade-in">
+          <div class="recommend-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+          </div>
+          <h3>Expand dashboard access</h3>
+          <p>Extend decision-support dashboards and monitoring tools beyond leadership roles to department-level coordinators who influence day-to-day outcomes.</p>
+        </div>
+
+        <div class="recommend-card fade-in">
+          <div class="recommend-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>
+          </div>
+          <h3>Invest in structured training</h3>
+          <p>Pair every new system rollout with role-specific training sessions, addressing the training gap most frequently cited among survey respondents.</p>
+        </div>
+
+        <div class="recommend-card fade-in">
+          <div class="recommend-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20V10M18 20V4M6 20v-6"/></svg>
+          </div>
+          <h3>Plan for sustained investment</h3>
+          <p>Treat IT infrastructure as an ongoing operating cost rather than a one-time expense, with a multi-year budget aligned to institutional growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONCLUSION ============ -->
+  <section class="section section-muted" id="conclusion">
+    <div class="container">
+      <p class="section-eyebrow">Conclusion</p>
+      <h2 class="section-title fade-in">Summary &amp; limitations</h2>
+
+      <div class="conclusion-grid">
+        <div class="fade-in">
+          <h3>Summary</h3>
+          <p>
+            This study found broad, consistent support for the idea that IT infrastructure
+            meaningfully improves academic institution administration — most clearly in
+            time savings, records accuracy, and communication. Support was more conditional
+            in areas depending on consistent system maintenance and staff training, pointing
+            to infrastructure quality, not just infrastructure presence, as the deciding factor
+            in outcomes.
+          </p>
+        </div>
+        <div class="fade-in">
+          <h3>Limitations</h3>
+          <p>
+            The sample, while diverse, was drawn from a limited number of institutions and
+            may not generalize to all administrative contexts. Self-reported Likert-scale
+            data also reflects perception rather than measured outcomes, and the survey did
+            not capture cost data, making it difficult to weigh benefits against investment
+            directly. Future work could pair this survey with operational metrics and a
+            larger, multi-institution sample.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REFERENCES ============ -->
+  <section class="section" id="references">
+    <div class="container">
+      <p class="section-eyebrow">References &amp; Acknowledgements</p>
+      <h2 class="section-title fade-in">Sources &amp; thanks</h2>
+
+      <div class="ref-columns">
+        <div class="fade-in">
+          <h3>References</h3>
+          <ol class="ref-list">
+            <li>Survey response dataset, collected by the project team, 2026.</li>
+            <li>Institutional IT infrastructure reports referenced during survey design.</li>
+            <li>Prior academic literature on educational technology adoption, consulted during background research.</li>
+          </ol>
+        </div>
+        <div class="fade-in">
+          <h3>Acknowledgements</h3>
+          <p>
+            We thank the 50+ administrators, faculty, and staff who took the time to complete
+            the survey and share their honest experiences. We are also grateful to our faculty
+            advisor for guidance throughout the research process, and to the participating
+            institutions for their cooperation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="section section-muted" id="team">
+    <div class="container">
+      <p class="section-eyebrow">Team</p>
+      <h2 class="section-title fade-in">Who worked on this</h2>
+
+      <div class="team-grid">
+        <div class="team-card fade-in">
+          <div class="team-avatar" aria-hidden="true">SS</div>
+          <h3>Shivendra Shukla</h3>
+          <p class="team-role">Project Lead &amp; Overall Designer</p>
+        </div>
+        <div class="team-card fade-in">
+          <div class="team-avatar" aria-hidden="true">AD</div>
+          <h3>Anushka Dubey</h3>
+          <p class="team-role">Report &amp; Documentation Lead</p>
+        </div>
+      </div>
+
+      <div class="contact-box fade-in">
+        <h3>Get in touch</h3>
+        <p>Questions about the research or the data behind it? Reach out to the team.</p>
+        <a href="mailto:smartcampus.research@example.edu" class="btn btn-outline">smartcampus.research@example.edu</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">SmartCampus<span class="brand-sub">Research</span></span>
+      <p>A student field project on IT infrastructure in academic administration.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#methodology">Methodology</a>
+      <a href="#findings">Findings</a>
+      <a href="#recommendations">Recommendations</a>
+      <a href="#team">Team</a>
+    </nav>
+
+    <p class="footer-copy">© 2026 SmartCampus Research Team. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+  <svg class="btt-ring" viewBox="0 0 44 44" width="46" height="46" aria-hidden="true">
+    <circle class="btt-ring-bg" cx="22" cy="22" r="19"></circle>
+    <circle class="btt-ring-progress" id="btt-progress" cx="22" cy="22" r="19"></circle>
+  </svg>
+  <svg class="btt-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>
